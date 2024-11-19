@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    font-family: 'Helvetica', sans-serif;
+  }
+
+  .cover {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    background-color: white;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .block {
+    position: absolute;
+  }
+
+  .block.red {
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 50%;
+    background-image: url('../images/red.avif');
+  }
+
+  .block.white {
+    bottom: 0;
+    left: 0;
+    width: 75%;
+    height: 50%;
+    background-image: url('../images/white2.jpg');
+  }
+ 
+  .block.white2 {
+    bottom: 0;
+    left: 75%;
+    width: 25%;
+    height: 10%;
+    background-image: url('../images/white2.jpg');
+  }
+
+  .block.yellow {
+    top: 0%;
+    left: 75%;
+    width: 25%;
+    height: 50%;
+    background-color: #FFEB3B;
+  }
+
+  .block.blue {
+    top: 50%;
+    left: 75%;
+    width: 25%;
+    height: 35%;
+    background-color: rgb(21, 121, 197);
+  }
+
+  .block.black {
+    top: 45%;
+    left: 0;
+    width: 100%;
+    height: 5%;
+    background-color: #000;
+  }
+
+  .block.black2 {
+    top: 0%;
+    right: 25%;
+    width: 5%;
+    height: 100%;
+    background-color: #000;
+  }
+
+  .block.black3 {
+    bottom: 10%;
+    right: 0%;
+    width: 25%;
+    height: 5%;
+    background-color: #000;
+  }
+
+  .title {
+    position: absolute;
+    top: 46%;
+    left: 35%;
+    transform: translateX(-50%);
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    text-align: left;
+    white-space: nowrap
+    filter: blur(0px);
+    transition: 0.5s;
+  }
+
+  .title:hover {
+    filter: blur(5px);
+    transition: 0.5s;
+  }
+
+  .title2 {
+    position: absolute;
+    top: 46%;
+    right: -10%;
+    transform: translateX(-50%);
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    text-align: right;
+    text-transform: uppercase;
+    filter: blur(0px);
+    transition: 0.5s;
+  }
+
+  .title2:hover {
+    filter: blur(5px);
+    transition: 0.5s;
+  }
+
+  .subtitle {
+    position: absolute;
+    top: 60%;
+    right:-22.5%;
+    transform: translateX(-50%);
+    transform: rotate(-90deg);
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    text-align: left;
+    width: 100%;
+    filter: blur(0px);
+    transition: 0.5s;
+    white-space: nowrap
+  }
+
+  .subtitle:hover {
+    filter: blur(5px);
+    transition: 0.5s;
+  }
+
+  .text {
+    position: absolute;
+    bottom: 11%;
+    right: -10%;
+    transform: translateX(-50%);
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    text-align: right;
+    text-transform: uppercase;
+    filter: blur(0px);
+    transition: 0.5s;
+  }
+
+  .text:hover {
+    filter: blur(5px);
+    transition: 0.5s;
+  }
